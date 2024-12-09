@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d8e4f7;
+}
+a {
+    text-decoration: none;
+}
+#A-section{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    /* background-color: red; */
+
+    #A-elements{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        gap: 30px;
+        /* border: 4px solid rgb(4, 253, 112); */
+    }
+    .A-logo{
+        font-size: 50px;
+        color: #393f44;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .A-menu{
+        font-size: 50px;
+        color: #393f44;
+        background: none;
+        border: none;
+    }
+}
+#AMAZONAS{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.581); */
+
+    #AMAZONAS_SECTION{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+        /* AMAZONAS TITLE + DESCRIPTION 🔰*/
+        #AMAZONAS_TITLE_DESCRIPTION{
+            width: 350px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            /* background-color: rgba(65, 105, 225, 0.642); */
+        }
+        .AMAZONAS_TITLE{
+            color: #161a1dee;
+            font-size: 70px;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 900;
+            margin-top: 180px;
+            margin-left: 290px;
+            z-index: 1;
+        }
+        .AMAZONAS_DESCRIPTION{
+            color: #484ec6;
+            font-size: 20px;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 900;
+            margin-left: 100px;
+        }
+        /* AMAZONAS MAP IMG 🔰*/
+        #AMAZONAS_MAP{
+            width: 532px;
+            height: 650px;
+            /* background-color: rgba(65, 225, 78, 0.323); */
+        }
+        .AMAZONAS_MAP_STYLE{
+            width: 550px;
+            height: 650px;
+        }
+        /* AUTANA TITLE + DESCRIPTION 🔰*/
+        #AUTANA_TITLE_DESCRIPTION{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 650px;
+            /* z-index: 1; */
+            /* background-color: rgba(22, 42, 101, 0.642); */
+        }
+        .AUTANA_TITLE{
+            color: #161a1dee;
+            font-size: 50px;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 900;
+            margin-top: 300px;
+            margin-right: 400px;
+        }
+        .AUTANA_DESCRIPTION{
+            color: #484ec6;
+            font-size: 18px;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 900;
+        }
+    }
+}
+#navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+
+        .ul-direction{
+            width: 1300px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+            border: 1px solid rgba(50, 50, 50, 0.4);
+            background: rgba(255, 255, 255, 0.041);
+            border-radius: 15px;
+            backdrop-filter: blur(60px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.552);
+        }
+        .Style-text{
+            color: #161a1dee;
+            font-size: 17px;
+            font-family: "Alata", sans-serif;
+            font-weight: 900;
+        }
+        .li-text{
+            width: 120px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 2px solid #161a1dee;
+        }
+        .ICON-AMAZONAS-size{
+            width: 60px;
+            height: 60px;
+        }
+        .ALL_ICON{
+            width: 80px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 2px solid #393f44;
+            background-color: #393f44;
+        }
+}
+.Style-text :active{
+    color: #3239b4;
+    background-color: #484ec643;
+}
+
