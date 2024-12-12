@@ -263,8 +263,8 @@ a {
 }
 #NEGOCIOS{
     padding:20vh;
-    /* width: 100%; */
     height: 100%;
+    gap: 30px;
     justify-content: center;
     flex-direction: column;
     border-top-left-radius: 40px;
@@ -298,50 +298,61 @@ a {
         }
     }
 }
-#NEGOCIOS_Card{
-    width: 340px;
-    height: 340px;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    padding: 1rem;
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    background-color: #6060606f;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.796);
+#SECTION_CARDS{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: #ff0000; */
 
-    .BOX_title_subtitle{
-        display: flex;
-        flex-direction: column;
-        width: 260px;
-        /* background-color: #ff0000; */
-
-        .title{
-            position: relative;
-            color: #3940d4;
-            margin-top: 18px;
-            margin-left: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 900;
-            font-size: 1.5rem;
-        }
-        .subtitle{
-            position: relative;
-            letter-spacing: 1px;
-            color: #3940d4;
-            margin-top: 3px;
-            margin-left: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            font-size: 0.9rem;
-            /* text-shadow: 0 0 1px #2b00ff, 0 0 1px #2b00ff; */
-        }
-    }
-    .IMG_NEGOCIO{
+    .NEGOCIOS_Card{
         width: 340px;
         height: 340px;
-        filter: blur(2px);
-        object-fit: cover;
-        position: absolute;
-        border-radius: 10px;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        padding: 1rem;
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+        background-color: #6060606f;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.796);
+    
+        .BOX_title_subtitle{
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            /* background-color: #ff0000; */
+    
+            .title{
+                position: relative;
+                color: #3940d4;
+                margin-top: 18px;
+                margin-left: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+            .subtitle{
+                position: relative;
+                letter-spacing: 1px;
+                color: #3940d4;
+                margin-top: 3px;
+                margin-left: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                font-size: 0.9rem;
+                /* text-shadow: 0 0 1px #2b00ff, 0 0 1px #2b00ff; */
+            }
+        }
+        .IMG_NEGOCIO{
+            width: 340px;
+            height: 340px;
+            filter: blur(2px);
+            object-fit: cover;
+            position: absolute;
+            border-radius: 10px;
+        }
     }
 }
