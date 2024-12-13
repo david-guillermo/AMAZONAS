@@ -322,27 +322,29 @@ a {
         .BOX_title_subtitle{
             display: flex;
             flex-direction: column;
-            width: 260px;
+            width: 300px;
             /* background-color: #ff0000; */
     
             .title{
                 position: relative;
-                color: #3940d4;
+                color: #D8E4F7  ;
                 margin-top: 18px;
                 margin-left: 20px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 900;
                 font-size: 1.5rem;
+                text-shadow: 2px 2px 5px #161A1D;
             }
             .subtitle{
                 position: relative;
                 letter-spacing: 1px;
-                color: #3940d4;
+                color: #165551 ;
                 margin-top: 3px;
                 margin-left: 30px;
                 font-family: Arial, Helvetica, sans-serif;
-                font-weight: 700;
-                font-size: 0.9rem;
+                font-weight: 800;
+                font-size: 1.1rem;
+                text-shadow: 2px 2px 5px #D8E4F7 ;
                 /* text-shadow: 0 0 1px #2b00ff, 0 0 1px #2b00ff; */
             }
         }
