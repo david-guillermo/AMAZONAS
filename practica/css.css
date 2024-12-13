@@ -1,0 +1,47 @@
+/* Estilo base para la card */
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #BEA5FB; /* Color base de la paleta */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido de la card (visible por defecto) */
+.card-content {
+    padding: 20px;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+/* Botones (inicialmente ocultos) */
+.card-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Ocultar por defecto */
+    gap: 10px;
+}
+
+/* Estilo de los botones */
+.card-buttons button {
+    background-color: #484EC6; /* Color de la paleta */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-buttons button:hover {
+    background-color: #393F44; /* Cambia color al pasar el cursor */
+}
+
+/* Hover: Mostrar los botones */
+.card:hover .card-buttons {
+    display: flex;
+}
