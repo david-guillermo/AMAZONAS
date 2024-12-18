@@ -118,15 +118,17 @@ header nav a:hover{
     }
 }
 .Ubicaion-Button:hover{
-    border: 4px solid #482e1d;
-    box-shadow: 3px 3px #000000;
+    border: 2px solid #161a1d;
+    box-shadow: 2px 2px #161a1d;
     transition: 0.2s;
 }
 .Ubicaion-Button:hover .location{
-    color: #795741;
+    color: #363f44;
+    /* z-index: 0; */
 }
 .Ubicaion-Button:hover .Ubicaion_text{
-    color: #795741;
+    color: #363f44;
+    /* z-index: 2; */
 }
 .socials{
     font-size: 35px;
@@ -134,7 +136,7 @@ header nav a:hover{
     /* background-color: darkmagenta; */
 }
 .socials:hover{
-    color: #482e1d;
+    color: #363f44;
     transition: 0.5s;
 }
 .slider .list .item .content .button button:hover{
