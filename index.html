@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Amazonas/CSS/Amazonas.css">
     <link rel="icon" href="./Amazonas/Imagenes/ICON-AMAZONAS.png">
@@ -11,66 +12,151 @@
 </head>
 <body>
 
-    <div id="navbar">
-        <ul class="ul-direction">
-            <a class="link-style" href="#TURISMO">
-                <div class="Style-text">
-                    <span class="li-text">Turismo</span>
+    <div class="Navbar">
+        <div class="sidebar active">
+            <div class="menu-btn">
+                <i class='bx bx-chevron-right-circle'></i>
+            </div>
+            <div class="head">
+                <div class="user-img">
+                    <img src="../Amazonas/Imagenes/ICON-AMAZONAS.png" alt="">
                 </div>
-            </a>
-            <a class="link-style" href="#HOTELERIA">
-                <div class="Style-text">
-                    <span class="li-text">Hotelería</span>
+                <div class="user-details">
+                    <p class="name_nav">ARIWË</p>
+                    <p class="title_nav">by Wael , Guillermo</p>
                 </div>
-            </a>
-            <a class="link-style" href="#COMIDA">
-                <div class="Style-text">
-                    <span class="li-text">Comida</span>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <ul>
+                        <li class="active">
+                            <a href="#AMAZONAS_MAP">
+                                <i id="bx" class='bx bx-home-alt-2'></i>
+                                <span class="text_nav">Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i id="bx" class='bx bx-store-alt'></i>
+                                <span class="text_nav">Categorias</span>
+                                <i id="bx" class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#TURISMO">
+                                        <i id="bx" class='bx bx-leaf'></i>
+                                        <span class="text_nav">TURISMO</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#HOTELERIA">
+                                        <i id="bx" class='bx bx-building-house'></i>
+                                        <span class="text_nav">HOTELERÍA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#COMIDA">
+                                        <i id="bx" class='bx bx-cookie'></i>
+                                        <span class="text_nav">COMIDA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#ABASTOS">
+                                        <i id="bx" class='bx bx-cart-add'></i>
+                                        <span class="text_nav">ABASTOS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#LICORERIAS">
+                                        <i id="bx" class='bx bx-drink'></i>
+                                        <span class="text_nav">LICORERÍAS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#FARMACIAS">
+                                        <i id="bx" class='bx bx-first-aid'></i>
+                                        <span class="text_nav">FARMÁCIAS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#MODA">
+                                        <i id="bx" class='bx bx-shopping-bag'></i>
+                                        <span class="text_nav">MODA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#JUGUETERIA">
+                                        <i id="bx" class='bx bx-joystick'></i>
+                                        <span class="text_nav">JUEGUETERIAS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#MISCELANEA">
+                                        <i id="bx" class='bx bx-gift'></i>
+                                        <span class="text_nav">MISELANEA</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i id="bx" class='bx bx-user-voice'></i>
+                                <span class="text_nav">Servicios</span>
+                                <i id="bx" class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">
+                                        <i id="bx" class='bx bx-user-plus'></i>
+                                        <span class="text_nav">Entrar a ARIWË</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i id="bx" class='bx bx-message-alt-error'></i>
+                                <span class="text_nav">Sobre Nostros</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i id="bx" class="fa-regular fa-handshake"></i>
+                                <span class="text_nav">Afiliados</span>
+                                <i id="bx" class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a>
+                                        <div class="user_Afiliado">
+                                            <img class="Afiliado" src="./Amazonas/Imagenes/perfil_afiliado(1).png" alt="">
+                                        </div>
+                                        <span class="text_nav">Manolito</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="user_Afiliado">
+                                            <img class="Afiliado" src="./Amazonas/Imagenes/perfil_afiliado(2).png" alt="">
+                                        </div>
+                                        <span class="text_nav">Doña Petra</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="user_Afiliado">
+                                            <img class="Afiliado" src="./Amazonas/Imagenes/perfil_afiliado(3).png" alt="">
+                                        </div>
+                                        <span class="text_nav">Juanito</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <a class="link-style" href="#ABASTOS">
-                <div class="Style-text">
-                    <span class="li-text">Abastos</span>
-                </div>
-            </a>
-            <a class="link-style" href="#LICORERIAS">
-                <div class="Style-text">
-                    <span class="li-text">Licorerías</span>
-                </div>
-            </a>
-            <a class="link-style" href="#FARMACIAS">
-                <div class="Style-text">
-                    <span class="li-text">Farmacias</span>
-                </div>
-            </a>
-            <a class="link-style" href="#ZAPATERIAS">
-                <div class="Style-text">
-                    <span class="li-text">Zapatería</span>
-                </div>
-            </a>
-            <a class="link-style" href="#JUGUETERIA">
-                <div class="Style-text">
-                    <span class="li-text">Juguetería</span>
-                </div>
-            </a>
-            <a class="link-style" href="#MISCELANEA">
-                <div class="Style-text">
-                    <span class="li-text">Miscelánea</span>
-                </div>
-            </a>
-            <a class="link-style" href="#A">
-                <div class="Style-text">
-                    <img class="ICON-AMAZONAS-size ALL_ICON" src="./Amazonas/Imagenes/ICON-AMAZONAS.png" alt="ICON-AMAZONAS">
-                </div>
-            </a>
-        </ul>
-    </div>
-    <section id="A-section">
-        <div id="A-elements">
-            <h1 class="A-logo" id="A">A</h1>
-            <button class="A-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </div>
-    </section>
+    </div>
     <section id="AMAZONAS">
         <section id="AMAZONAS_SECTION">
             <div id="AMAZONAS_TITLE_DESCRIPTION">
@@ -807,8 +893,8 @@
             </div>
         </section>
         <div class="BOX_TITLE">
-            <h1 class="TITLE_NEGOCIOS" id="ZAPATERIAS">ZAPATERIAS</h1>
-            <h4 class="SUBTITLE_NEGOCIOS">Pasos con estilo</h4>
+            <h1 class="TITLE_NEGOCIOS" id="MODA">MODA</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Estilo que se lleva, calidad que se siente.</h4>
         </div>
         <section id="SECTION_CARDS">
             <div class="NEGOCIOS_Card">
@@ -1133,5 +1219,6 @@
     </section>
     
 
+    <script src="./Amazonas/JS/Barra-de-navegacion.js"></script>
 </body>
 </html>

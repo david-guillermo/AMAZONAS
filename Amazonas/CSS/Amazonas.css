@@ -8,34 +8,7 @@ body{
 a {
     text-decoration: none;
 }
-#A-section{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: end;
-    /* background-color: red; */
 
-    #A-elements{
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-        gap: 30px;
-        /* border: 4px solid rgb(4, 253, 112); */
-    }
-    .A-logo{
-        font-size: 50px;
-        color: #393f44;
-        font-family: "Anton SC", sans-serif;
-        font-weight: 800;
-        font-style: normal;
-    }
-    .A-menu{
-        font-size: 50px;
-        color: #393f44;
-        background: none;
-        border: none;
-    }
-}
 #AMAZONAS{
     width: 100%;
     height: 90vh;
@@ -44,8 +17,8 @@ a {
 
     #AMAZONAS_SECTION{
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    /* flex-direction: row; */
     
         /* AMAZONAS TITLE + DESCRIPTION 🔰*/
         #AMAZONAS_TITLE_DESCRIPTION{
@@ -60,7 +33,7 @@ a {
         }
         .AMAZONAS_TITLE{
             color: #161a1dee;
-            font-size: 70px;
+            font-size: 3.5rem;
             font-family: "Anton SC", sans-serif;
             font-weight: 900;
             margin-top: 180px;
@@ -69,7 +42,7 @@ a {
         }
         .AMAZONAS_DESCRIPTION{
             color: #484ec6;
-            font-size: 20px;
+            font-size: 1.2rem;
             font-family: "Anton SC", sans-serif;
             font-weight: 900;
             margin-left: 100px;
@@ -97,7 +70,7 @@ a {
         }
         .AUTANA_TITLE{
             color: #161a1dee;
-            font-size: 50px;
+            font-size: 3.5rem;
             font-family: "Anton SC", sans-serif;
             font-weight: 900;
             margin-top: 300px;
@@ -106,65 +79,144 @@ a {
         }
         .AUTANA_DESCRIPTION{
             color: #484ec6;
-            font-size: 18px;
+            font-size: 1.2rem;
             font-family: "Anton SC", sans-serif;
             font-weight: 900;
         }
     }
 }
-#navbar{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Navbar{
+    /* width: 100%; */
     position: fixed;
-    z-index: 2;
-    bottom: 30px;
-
-        .ul-direction{
-            width: 1300px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            gap: 10px;
-            border: 3px solid rgba(50, 50, 50, 0.4);
-            background: rgba(255, 255, 255, 0.041);
-            border-radius: 15px;
-            backdrop-filter: blur(20px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.552);
-        }
-        .Style-text{
-            color: #161a1dee;
-            font-size: 17px;
-            font-family: "Alata", sans-serif;
-            font-weight: 900;
-        }
-        .li-text{
-            width: 120px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            border: 2px solid #161a1dee;
-        }
-        .ICON-AMAZONAS-size{
-            width: 60px;
-            height: 60px;
-        }
-        .ALL_ICON{
-            width: 80px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            border: 2px solid #393f44;
-            background-color: #393f44;
-        }
+    height: 100vh;
+    z-index: 3;
+}
+.sidebar {
+    position: relative;
+    width: 256px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 30px;
+    transition: width 0.3s;
+    backdrop-filter: blur(20px);
+    background-color: #3c3e6d8c;
+    font-family: "Anton SC", sans-serif;
+}
+.sidebar.reduced {
+    width: 78px;
+    padding: 24px 8px;
+}
+.sidebar .text_nav {
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+.sidebar.reduced .text_nav {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+.sidebar .head{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2a2a2a;
+}
+.user-img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.user-details .title_nav,
+.menu .title_nav{
+    color: #361fe8;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.user-details .name_nav{
+    font-size: 20px;
+    font-weight: 900;
+}
+.menu ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2a2a2a;
+    text-decoration: none;
+    padding: 12px 8px;
+    border-radius: 8px;
+    transition: all 200ms;
+}
+.menu ul li a:hover,
+.menu ul li.active a{
+    color: #f6f6f6;
+    background-color: #f6f6f63b;
+}
+.menu ul li .text_nav{
+    flex: 1;
+}
+.menu ul li #bx{
+    font-size: 24px;
+    transition: all 400ms;
+}
+.menu ul li.active .bx-chevron-down{
+    transform: rotate(180deg);
+}
+.menu .sub-menu{
+    display: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-left: 1px solid #f6f6f6;
+}
+.menu .sub-menu li a{
+    padding: 10px 8px;
+    font-size: 14px;
+}
+.menu-btn {
+    color: #484ec6;
+    position: absolute;
+    /* font-weight: bold; */
+    font-size: 30px;
+    right: -14px;
+    top: 3.5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f697;
+}
+.menu-btn:hover i {
+    color: #8f95ff;
+}
+.menu-btn:hover {
+    border: 1px solid #8f95ff;
+    background-color: #6a60fb30;
+}
+.menu-btn i {
+    transition: all 600ms;
+}
+.sidebar.reduced .menu-btn i {
+    transform: rotate(180deg);
 }
 .Style-text :active{
     color: #3239b4;
@@ -427,4 +479,17 @@ a {
 .Btn:active {
     transform: translate(2px, 2px);
 }
+.user_Afiliado{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: red; */
 
+    .Afiliado{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        /* background-color: cadetblue; */
+    }
+}
