@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../Imagenes/Stone_Venezuela.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+#About_ARIWË{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(64, 224, 75, 0.704); */
+
+    .About{
+        width: 800px;
+        height: 700px;
+        padding: 5vh;
+        border: 2px solid #000;
+        border-radius: 20px;
+        backdrop-filter: blur(8px);
+        background-color: rgba(148, 148, 148, 0.152);
+
+    }
+    .About_Container{
+        width: 800px;
+        height: 320px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        /* background-color: yellow; */
+
+        .About_Box{
+            width: 250px;
+            height: 100%;
+            /* background-color: rgb(0, 255, 229); */
+        }
+        .About_Title{
+            width: 100%;
+            height: 120px;
+            color: #484ec6;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 900;
+            font-size: 1.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(174, 0, 255); */
+        }
+        .About_Descripcion{
+            width: 100%;
+            color: rgb(0, 0, 0);
+            font-family: "Anton SC", sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            /* letter-spacing: 0.10px; */
+            /* background-color: rgb(0, 255, 0); */
+
+            .Ariwe{
+                font-weight: 600;
+                font-size: 1rem;
+                color: #2f37c4;
+            }
+        }
+    }
+    .Valores_Container{
+        width: 800px;
+        height: 350px;
+        /* background-color: rgb(38, 255, 0); */
+
+        .Valores_Title{
+            width: 100%;
+            height: 60px;
+            color: #484ec6;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+        }
+        .Container_Titles{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            /* background-color: aliceblue; */
+
+            .Box_Valores_subtitle{
+                width: 100%;
+                height: 90px;
+                /* background-color: rgba(0, 139, 30, 0.366); */
+
+                .Valores_subtitle{
+                    color: #2b32c2;
+                    font-family: "Anton SC", sans-serif;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+
+                }
+                .valores_style{
+                    color: rgb(0, 0, 0);
+                    font-family: "Anton SC", sans-serif;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+.fa-regular{
+    color: #2f37c4;
+    font-size: 40px;
+}
