@@ -3,166 +3,415 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="./Amazonas/CSS/Amazonas.css">
     <link rel="icon" href="./Amazonas/Imagenes/ICON-AMAZONAS.png">
     <title>Ariwë</title>
 </head>
 <body>
+<!-- primro de frebrero -->
+    <!--========= HEADER =========-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="" class="nav__logo">
+                    <img class="img" src="./Amazonas/Imagenes/ICON-AMAZONAS.png" alt=""></i>ARIWË
+                </a>
 
-    <div class="Navbar">
-        <div class="sidebar active">
-            <div class="menu-btn">
-                <i class='bx bx-chevron-right-circle'></i>
-            </div>
-            <div class="head">
-                <div class="user-img">
-                    <img src="../Amazonas/Imagenes/ICON-AMAZONAS.png" alt="">
-                </div>
-                <div class="user-details">
-                    <p class="name_nav">ARIWË</p>
-                    <p class="title_nav">by Wael , Guillermo</p>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-5-fill nav__toggle-menu"></i>
+                    <i class="ri-close-large-line nav__toggle-close"></i>
                 </div>
             </div>
-            <div class="nav">
-                <div class="menu">
-                    <ul>
-                        <li class="active">
-                            <a href="#AMAZONAS_MAP">
-                                <i id="bx" class='bx bx-home-alt-2'></i>
-                                <span class="text_nav">Inicio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <i id="bx" class='bx bx-store-alt'></i>
-                                <span class="text_nav">Categorias</span>
-                                <i id="bx" class='bx bx-chevron-down'></i>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#TURISMO">
-                                        <i id="bx" class='bx bx-leaf'></i>
-                                        <span class="text_nav">TURISMO</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#HOTELERIA">
-                                        <i id="bx" class='bx bx-building-house'></i>
-                                        <span class="text_nav">HOTELERÍA</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#COMIDA">
-                                        <i id="bx" class='bx bx-cookie'></i>
-                                        <span class="text_nav">COMIDA</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#ABASTOS">
-                                        <i id="bx" class='bx bx-cart-add'></i>
-                                        <span class="text_nav">ABASTOS</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#LICORERIAS">
-                                        <i id="bx" class='bx bx-drink'></i>
-                                        <span class="text_nav">LICORERÍAS</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#FARMACIAS">
-                                        <i id="bx" class='bx bx-first-aid'></i>
-                                        <span class="text_nav">FARMÁCIAS</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#MODA">
-                                        <i id="bx" class='bx bx-shopping-bag'></i>
-                                        <span class="text_nav">MODA</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#JUGUETERIA">
-                                        <i id="bx" class='bx bx-joystick'></i>
-                                        <span class="text_nav">JUEGUETERIAS</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#MISCELANEA">
-                                        <i id="bx" class='bx bx-gift'></i>
-                                        <span class="text_nav">MISELANEA</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i id="bx" class='bx bx-user-voice'></i>
-                                <span class="text_nav">Servicios</span>
-                                <i id="bx" class='bx bx-chevron-down'></i>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">
-                                        <i id="bx" class='bx bx-user-plus'></i>
-                                        <span class="text_nav">Entrar a ARIWË</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i id="bx" class="fa-solid fa-camera-retro"></i>
-                                        <span class="text_nav">Fotografia</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="./Amazonas/pages/Sobre_ARIWË.html">
-                                <i id="bx" class='bx bx-message-alt-error'></i>
-                                <span class="text_nav">Sobre Nostros</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i id="bx" class="fa-regular fa-handshake"></i>
-                                <span class="text_nav">Afiliados</span>
-                                <i id="bx" class='bx bx-chevron-down'></i>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a>
-                                        <div class="user_Afiliado">
-                                            <img class="Afiliado" src="./Amazonas/Imagenes/Imagenes_de_Afiliados/perfil_afiliado(1).png" alt="">
-                                        </div>
-                                        <span class="text_nav">Manolito</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <div class="user_Afiliado">
-                                            <img class="Afiliado" src="./Amazonas/Imagenes/Imagenes_de_Afiliados/perfil_afiliado(2).png" alt="">
-                                        </div>
-                                        <span class="text_nav">Doña Petra</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <div class="user_Afiliado">
-                                            <img class="Afiliado" src="./Amazonas/Imagenes/Imagenes_de_Afiliados/perfil_afiliado(3).png" alt="">
-                                        </div>
-                                        <span class="text_nav">Juanito</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            <!--========= NAV MENU =========-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#" class="nav__link"><h1 class="Nab__Name"><i class="ri-home-line icono__nab"></i>Inicio</h1></a>
+                    </li>
+
+                    <!--========= DROPDOWN 1 =========-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <h1 class="Nab__Name"><i class="ri-store-2-line icono__nab"></i>Categorias</h1> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <!-- 1🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-treasure-map-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Turismo</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">JavaScript 00P</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 2🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-hotel-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Hoteleria</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Development with Flutter</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Wep development wiht React</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Backend development expert</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 3🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-restaurant-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Comida</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Wep develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Applications develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">UI/UX desing</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Informatic security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 4🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-shopping-cart-2-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Abastos</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Courses certificates</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Free certifications</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 5🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-beer-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Licorerias</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Courses certificates</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Free certifications</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 6🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-heart-pulse-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Farmacias</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">JavaScript 00P</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 7🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-shopping-bag-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Moda</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Development with Flutter</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Wep development wiht React</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Backend development expert</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 8🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-gamepad-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">jugueteria</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Wep develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Applications develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">UI/UX desing</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Informatic security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 9🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-gift-2-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Micelanea</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Wep develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Applications develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">UI/UX desing</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Informatic security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 10🛑 -->
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-motorbike-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Industria Automotris</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Wep develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Applications develoment</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">UI/UX desing</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Informatic security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--========= DROPDOWN 2 =========-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <h1 class="Nab__Name"><i class="ri-customer-service-2-line icono__nab"></i>Servicios</h1> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-user-add-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Quiero publicitarme en Ariwë</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Contactar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-camera-3-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Fotografia</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Fotografiar Negocio</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Fotografiar Productos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-megaphone-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Publicidad</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Blog de Negocio</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Publicidad en Instagram</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Publicidad en Tiktok</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link"><h1 class="Nab__Name"><i class="ri-feedback-line icono__nab"></i>Sobre Nosotros</h1></a>
+                    </li>
+
+                    <!--========= DROPDOWN 3 =========-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <h1 class="Nab__Name"><i class="ri-service-line icono__nab"></i>Afiliados</h1> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-community-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">About us</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">About us</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Support</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-shield-line"></i>
+                                    </div>
+
+                                    
+                                    <span class="dropdown__title">Safety and quality</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="" class="dropdown__link">Cookie settings</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="dropdown__link">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <!--========= CONTENT =========-->
     <section id="AMAZONAS">
         <section id="AMAZONAS_SECTION">
             <div id="AMAZONAS_TITLE_DESCRIPTION">
@@ -180,6 +429,7 @@
             </div>
         </section>
     </section>
+    <!--========= CARRUSEL DE IMG`S =========-->
     <section id="CARRUSEL">
         <div id="Box-selecionar">
             <h1 id="Selecionar">Selecionar</h1>
@@ -249,6 +499,7 @@
             </div>
         </div>
     </section>
+    <!--========= CARD NEGOCIOS =========-->
     <section id="NEGOCIOS">
         <div class="BOX_TITLE">
             <h1 class="TITLE_NEGOCIOS" id="TURISMO">TURISMO</h1>
@@ -509,47 +760,49 @@
         <section id="SECTION_CARDS">
             <div id="Card">
                 <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/COMIDA/ALTAPINTA.png" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">ALTAPINTA</h1>
+                    <h3 class="DESCRIPTION_Negocio">Donde el café encuentra el postre y juntos pintan un momento perfecto.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <a href="./Amazonas/pages/amazonas.html">
+                            <div class="cube">
+                                <span class="side front">Ver mas..</span>
+                                <span class="side top">ALTAPINTA</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/COMIDA/COMIDA(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
                     <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/COMIDA/COMIDA(3).jpg" alt="">
-                </div>
-                <div class="Text_Box">
-                    <h1 class="TITLE_Negocio"></h1>
-                    <h3 class="DESCRIPTION_Negocio"></h3>
-                </div>
-                <div id="Button_Box">
-                    <div class="button-icon">
-                        <div class="icon">
-                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
-                        </div>
-                        <div class="cube">
-                            <span class="side front">Ver mas..</span>
-                            <span class="side top"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Card">
-                <div class="Img_Box">
-                    <img class="Img_Negocio" src="" alt="">
-                </div>
-                <div class="Text_Box">
-                    <h1 class="TITLE_Negocio"></h1>
-                    <h3 class="DESCRIPTION_Negocio"></h3>
-                </div>
-                <div id="Button_Box">
-                    <div class="button-icon">
-                        <div class="icon">
-                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
-                        </div>
-                        <div class="cube">
-                            <span class="side front">Ver mas..</span>
-                            <span class="side top"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Card">
-                <div class="Img_Box">
-                    <img class="Img_Negocio" src="" alt="">
                 </div>
                 <div class="Text_Box">
                     <h1 class="TITLE_Negocio"></h1>
@@ -1385,6 +1638,7 @@
             </div>
         </section>
     </section>
+    <!--========= FOOTER =========-->
     <footer>
         <div class="BOX_FOOTER">
             <div class="BOX_FOOTER_TITLE">

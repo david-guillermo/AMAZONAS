@@ -1,48 +1,74 @@
-document.querySelectorAll(".menu > ul > li").forEach(function (menuItem) {
-    menuItem.addEventListener("click", function (e) {
-        // Check if the clicked menu item is already active
-        const isActive = menuItem.classList.contains("active");
+/*========= SHOW MENU =========*/
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
 
-        // Remove "active" class from all sibling elements and hide their sub-menus
-        menuItem.parentElement.querySelectorAll("li").forEach(function (sibling) {
-            sibling.classList.remove("active");
-            sibling.querySelectorAll(".sub-menu").forEach(function (subMenu) {
-                subMenu.style.display = "none";
-            });
-        });
+    toggle.addEventListener('click', () => {
 
-        // If the clicked menu item was not active, activate it and show its sub-menu
-        if (!isActive) {
-            menuItem.classList.add("active");
-            let subMenu = menuItem.querySelector(".sub-menu");
-            if (subMenu) {
-                subMenu.style.display = "block";
-            }
+        // add show-menu class to nav menu
+        nav.classList.toggle('show-menu')
+        
+        // add show-icon to show and hide the menu icon
+        toggle.classList.toggle('show-icon')
+    })
+}
+showMenu('nav-toggle','nav-menu')
+
+/*========= SHOW DROPDOWN MENU =========*/
+const dropdownItems = document.querySelectorAll('.dropdown__item')
+
+// 1. Select each dropdown item
+dropdownItems.forEach((item) => {
+    const dropdownButton = item.querySelector('.dropdown__button')
+
+    // 2. Select each dropdown click
+    dropdownButton.addEventListener('click', () => {
+        //7. Select the current show-dropdown class
+        const showDropdown = document.querySelector('.show-dropdown')
+
+        // 5. Call the toggleItem function
+        toggleItem(item)
+
+        // 8. Remove the show dropdown class from other items
+        if (showDropdown && showDropdown!= item){
+            toggleItem(showDropdown)
         }
-    });
-});
+    })
+})
 
-document.querySelector(".menu-btn").addEventListener("click", function () {
-    const sidebar = document.querySelector(".sidebar");
-    const userDetails = document.querySelector(".user-details");
-    const menuTexts = document.querySelectorAll(".menu .text");
-
-    // Alternar la clase 'reduced' en el sidebar
-    sidebar.classList.toggle("reduced");
-
-    // Alternar la visibilidad del texto en la parte superior
-    if (sidebar.classList.contains("reduced")) {
-        userDetails.style.display = "none";
-    } else {
-        userDetails.style.display = "block";
+// 3. Create a function to display the dropdown 
+const toggleItem = (item) => {
+    // 3.1 Select each dropdown content
+    const dropdownContainer = item.querySelector('.dropdown__container')
+    // 6. If the same item contains the show-dropdown class, remove it
+    if(item.classList.contains('show-dropdown')){
+        dropdownContainer.removeAttribute('style')
+        item.classList.remove('show-dropdown')
+    }else{
+    // 4. add the maximun height to the dropdown content and add the show-dropdown class
+        dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px'
+        item.classList.add('show-dropdown')
     }
+}
 
-    // Alternar la visibilidad del texto en los menús
-    menuTexts.forEach(function (text) {
-        if (sidebar.classList.contains("reduced")) {
-            text.style.display = "none";
-        } else {
-            text.style.display = "inline-block";
-        }
-    });
-});
+/*========= DELETE DROPDOWN STYLES =========*/
+const mediaQuery = matchMedia('(min-width: 1118px)'),
+    dropdownContainer = document.querySelectorAll('.dropdown__button')
+
+// Function to remove dropdown styles in mobile mode when browser resizes
+const removeStyle = () => {
+    // Validate if the media query reaches 1118px
+    if(mediaQuery.matches){
+        // Romeve the dropdown container height style
+        dropdownContainer.forEach((e) =>{
+            e.removeAttribute('style')
+        })
+        
+        // Remove the show-dropdown class from dropdown item
+        dropdownItems.forEach((e) =>{
+            e.classList.remove('show-dropdown')
+        })
+    }
+}
+
+addEventListener('resize', removeStyle)
