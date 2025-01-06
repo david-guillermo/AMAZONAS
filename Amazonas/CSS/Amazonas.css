@@ -1,78 +1,95 @@
 body{
     background-color: #d8e4f7;
 }
-#AMAZONAS{
-    width: 100%;
-    height: 90vh;
-    /* background-color: rgba(0, 0, 0, 0.581); */
-
-    #AMAZONAS_SECTION{
-    display: flex;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.grid-container {
+    font-family: "Anton SC", sans-serif;
+    height: 100%;
+    margin-top: 3.5rem;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    grid-template-areas: "item1 item2 item3";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 2rem;
+    /* background-color: rgb(23, 23, 23); */
+
+    .item1 {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        grid-area: item1;
+        padding: 10px;
+        /* background-color: #f8b60097; */
+    }
+    .item2 {
+        width: 100%;
+        height: 400px;
+        grid-area: item2;
+        /* background-color: #00bbd48f; */
+        
+        .img_amazonas_container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgba(255, 0, 0, 0.414); */
     
-        /* AMAZONAS TITLE + DESCRIPTION 🔰*/
-        #AMAZONAS_TITLE_DESCRIPTION{
-            width: 350px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 20px;
-            /* background-color: rgba(65, 105, 225, 0.642); */
+            .img_amazonas{
+                width: 300px;
+                height: 100%;
+                object-fit: cover;
+                /* background-color: rgba(140, 0, 255, 0.414); */
+            }
         }
-        .AMAZONAS_TITLE{
-            color: #161a1dee;
-            font-size: 3.5rem;
-            font-family: "Anton SC", sans-serif;
-            font-weight: 900;
-            margin-top: 180px;
-            margin-left: 290px;
-            z-index: 1;
-        }
-        .AMAZONAS_DESCRIPTION{
-            color: #484ec6;
-            font-size: 1.2rem;
-            font-family: "Anton SC", sans-serif;
-            font-weight: 900;
-            margin-left: 100px;
-        }
-        /* AMAZONAS MAP IMG 🔰*/
-        #AMAZONAS_MAP{
-            width: 532px;
-            height: 650px;
-            /* background-color: rgba(65, 225, 78, 0.323); */
-        }
-        .AMAZONAS_MAP_STYLE{
-            width: 550px;
-            height: 650px;
-        }
-        /* AUTANA TITLE + DESCRIPTION 🔰*/
-        #AUTANA_TITLE_DESCRIPTION{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 300px;
-            height: 650px;
-            /* z-index: 1; */
-            /* background-color: rgba(22, 42, 101, 0.642); */
-        }
-        .AUTANA_TITLE{
-            color: #161a1dee;
-            font-size: 3.5rem;
-            font-family: "Anton SC", sans-serif;
-            font-weight: 900;
-            margin-top: 300px;
-            margin-right: 400px;
-            z-index: 1;
-        }
-        .AUTANA_DESCRIPTION{
-            color: #484ec6;
-            font-size: 1.2rem;
-            font-family: "Anton SC", sans-serif;
-            font-weight: 900;
-        }
+    }
+    .item3 {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-area: item3;
+        padding: 10px;
+        /* background-color: #8bc34a7c; */
+    }
+    .Amazonas_title{
+        color: #161a1dee;
+        font-size: 2.5rem;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 900;
+    }
+    .Amazonas_description{
+        color: #484ec6;
+        font-size: 1.2rem;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 900;
+    }
+}
+/* Estilo para móviles AMAZONAS HOME*/
+@media (max-width: 768px) {
+    .grid-container {
+    grid-template-areas: 
+        "item1"
+        "item2"
+        "item3";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
     }
 }
 /*========= BARRA DE NAVEGACION =========*/
@@ -106,17 +123,6 @@ body{
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
 }
 /*========= REUSABLE CSS CLASSES =========*/
 .container{
@@ -168,6 +174,12 @@ a{
     object-fit: cover;
     /* font-size: 2rem; */
 }
+.Afiliados_img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .nav__logo:hover{
     color: var(--first-color);
 }
@@ -190,7 +202,6 @@ a{
 .nav__toggle-close{
     opacity: 0;
 }
-
 /* Navegation for mobile devices */
 @media screen and (max-width: 1118px){
     .nav__menu{
@@ -221,19 +232,16 @@ a{
     justify-content: space-between;
     align-items: center;
     transition: background-color .3s;
-    
 }
 .nav__link:hover{
     background-color: var(--first-color-lighten);
 }
-
 /* Show menu */
 .show-menu{
     opacity: 1;
-    top: 3rem;
+    /* top: 1rem; */
     pointer-events: initial;
 }
-
 /* show icon */
 .show-icon .nav__toggle-menu{
     opacity: 0;
@@ -243,7 +251,6 @@ a{
     opacity: 1;
     transform: rotate(90deg);
 }
-
 /*========= DROPDOWN =========*/
 .dropdown__button{
     cursor: pointer;
@@ -265,11 +272,23 @@ a{
     transition: height .4s;
 }
 .dropdown__content{
-    row-gap: 1rem;
+    gap: 1.4rem;
+    padding: 2rem;
+    /* row-gap: 1rem; */
+    /* background-color: #2ac14b; */
 }
 .dropdown__group{
-    padding-left: 2.5rem;
-    row-gap: .51rem;
+    width: 150px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: #ffffff77 1px solid;
+    /* row-gap: .51rem; */
+    /* background-color: red; */
 }
 .dropdown__group:first-child{
     margin-top: 1.25rem;
@@ -298,12 +317,10 @@ a{
 .dropdown__link:hover{
     color: var(--title-color);
 }
-
 /* Rotate dropdown icon */
 .show-dropdown .dropdown__arrow{
     transform: rotate(180deg);
 }
-
 /*========= BREAKPOINTS =========*/
 /* For small devices */
 @media screen and (max-width: 300px){
@@ -311,7 +328,6 @@ a{
         padding-left: 1.5rem;
     }
 }
-
 /* For large device */
 @media screen and (min-width: 1118px){
     /* NAV */
@@ -357,13 +373,13 @@ a{
         /* background-color: aqua; */
     }
     .dropdown__content{
-        grid-template-columns: repeat(5, max-content);
-        column-gap: 6rem;
+        grid-template-columns: repeat(6, max-content);
+        column-gap: 2rem;
         max-width: 1120px;
         margin-inline: auto;
     }
     .dropdown__group{
-        padding: 2rem 0;
+        padding: .20rem 0;
         align-content: baseline;
         row-gap: 1rem;
     }
@@ -375,13 +391,13 @@ a{
         row-gap: .75rem;
     }
     .dropdown__icon{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         background-color: var(--first-color-lighten);
         border-radius: 50%;
         display: grid;
         place-content: center;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
     }
     .dropdown__icon i{
         font-size: 2rem;
@@ -404,10 +420,11 @@ a{
     }
     /* Show dropdown menu */
     .dropdown__item:hover > .dropdown__container{
-        top: 5.5rem;
+        top: 4.1rem;
         opacity: 1;
         pointer-events: initial;
         cursor: initial;
+        /* background-color: red; */
     }
 }
 @media screen and (min-width: 1152px){
@@ -417,107 +434,69 @@ a{
 }
 /*========= Carrusel de imegenes =========*/
 #CARRUSEL{
-    min-height: 60vh;
-    display: grid;
-    place-items: center;
-    /* background-color: aqua; */
-}
-.slider{
-    width: 100%;
-    height: 250px;
-    margin: auto;
-    position: relative;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    /* background-color: darkblue; */
-}
-.slider-track{
     display: flex;
-    width: calc(250px * 18);
-    animation: scroll 35s linear infinite;
-}
-.slider-track:hover{
-    animation-play-state: paused;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #d8e4f7;
+
+    .img_carrusel{
+        border: #000 1px solid;
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .slider{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background: #d8e4f7;
+        overflow: hidden;
+    }
+    .slider::before, .slider::after{
+        position: absolute;
+        background: linear-gradient(to right, #d8e4f7 0%, rgba(255, 255, 255, 0) 100%);
+        content: "";
+        width: 70px;
+        height: 200px;
+        z-index: 3;
+    }
+    .slider::after{
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+    .slider::before{
+        left: 0;
+        top: 0;
+    }
+    .slider .slide-track{
+        gap: 30px;
+        display: flex;
+        width: calc(250px * 14);
+        animation: scroll 15s linear infinite;
+    }
+    .slider .slide{
+        width: 250px;
+        height: 200px;
+    }
 }
 @keyframes scroll{
     0%{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(calc(-250px * 7));
     }
 }
-.slide{
-    height: 100%;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    /* perspective: 100px; */
-}
-.img_carrusel{
-    width: 100%;
-    filter: grayscale(100%);
-    transition: transform 1s;
-    border-radius: 10px;
-}
-.img_carrusel:hover{
-    filter: grayscale(0%);
-    transition: 600ms;
-    transform: translateY(-40px);
-}
-.slider::before,
-.slider::after{
-    background: linear-gradient(to right, #d8e4f7 0%,
-    rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-.slider::before{
-    left: 0;
-    top: 0;
-}
-.slider::after{
-    right: 0;
-    top: 0;
-    transform: rotate(180deg);
-}
-/*========= TEXTO "SELECIONAR ⬇" =========*/
-#Box-selecionar{
-    width: 400px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    /* background-color: rgba(0, 0, 139, 0.364); */
-
-    #Selecionar{
-        color: #2d2f31;
-        font-size: 50px;
-        font-family: "Anton SC", sans-serif;
-        font-weight: 600;
-    }
-    #ARROW{
-        color: #484ec6;
-        font-size: 50px;
-        font-weight: bold;
-    }
-}
+/*================================================*/
 #NEGOCIOS{
-    padding: 18vh;
     height: 100%;
-    /* gap: 30px; */
     justify-content: center;
     flex-direction: column;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     border: 2px solid #000000;
-    background-color: #4f4f4f6b;
+    background-color: #4f4f4f94;
 
     .BOX_TITLE{
         width: 100%;
@@ -525,20 +504,22 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         flex-direction: column;
-        /* background-color: yellowgreen; */
+        background-color: rgb(38, 31, 181);
 
         .TITLE_NEGOCIOS{
-            font-size: 60px;
-            letter-spacing: 20px;
-            color: #030677; 
+            color: #ffffff; 
+            font-size: 2rem;
+            letter-spacing: .50rem;
             font-family: "Anton SC", sans-serif;
             font-weight: 800;
             font-style: normal;
         }
         .SUBTITLE_NEGOCIOS{
-            font-size: 26px;
-            color: #393f44;
+            color: #ffbb00;
+            font-size: 1rem;
+            letter-spacing: .10rem;
             font-family: "Anton SC", sans-serif;
             font-weight: 800;
             font-style: normal;
@@ -547,16 +528,18 @@ a{
 }
 #SECTION_CARDS{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, auto);
     /* background-color: springgreen; */
 }
 /*========= CARD NEGOCIOS STYLES =========*/
 #Card{
-    width: 310px;
-    height: 360px;
+    width: 280px;
+    height: 320px;
     padding: 20px;
     border: 2px solid #222229;
     border-radius: 10px;
@@ -565,12 +548,12 @@ a{
 
     .Img_Box{
         width: 100%;
-        height: 180px;
+        height: 130px;
     
         .Img_Negocio{
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            border-radius: 10px;
             object-fit: cover;
         }
     }
@@ -589,16 +572,19 @@ a{
             display: flex;
             justify-content: center;
             align-items: center;
+            /* background-color: darkgreen; */
         }
         .DESCRIPTION_Negocio{
             width: 100%;
             height: 60px;
-            font-size: 0.90em;
-            color: #222229;
-            font-family: "Anton SC", sans-serif;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #222229;
+            font-size: 0.90em;
+            font-family: "Anton SC", sans-serif;
+            /* background-color: red; */
         }
     }
     .BOX_CONOCER{
@@ -633,7 +619,7 @@ a{
         justify-content: end;
         transition: all 0.4s;
         transform-style: preserve-3d;
-        width: 178px;
+        width: 190px;
         height: 20px;
     }
     .button-icon:hover .cube {
@@ -644,10 +630,10 @@ a{
         height: 47px;
         width: 160px;
         display: flex;
-        font-size: 0.8em;
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
+        font-size: 0.8em;
         letter-spacing: 0.5px;
         font-weight: bold;
     }
@@ -763,7 +749,7 @@ footer {
     margin: 0 auto;
 }
 .FOOTER_TITLE {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     color: #222cf4;
