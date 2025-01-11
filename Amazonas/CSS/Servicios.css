@@ -103,10 +103,10 @@ h1 span{
     top: -100%;
 }
 .card i{
-    color: #fa9d3f;
+    font-size: 4rem;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 4rem;
+    color: #fa9d3f;
 }
 .card h2{
     color: #fff;
@@ -124,7 +124,7 @@ h1 span{
     font-size: .80rem;
     text-align: center;
     width: 100%;
-    margin: 12px 0;
+    margin: 8px 0;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -162,4 +162,12 @@ h1 span{
     h1{
         font-size: 3rem;
     }
+}
+#icon_link{
+    color:#8465fe;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.card:hover #icon_link{
+    color:#000000;
 }
