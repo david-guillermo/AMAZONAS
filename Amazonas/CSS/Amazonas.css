@@ -535,14 +535,14 @@ a{
 #SECTION_CARDS{
     width: 100%;
     height: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 2rem;
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, auto);
-    background-color: springgreen;
+    /* background-color: springgreen; */
 }
 @media (max-width: 768px){
     #SECTION_CARDS{
@@ -551,6 +551,13 @@ a{
 }
 @media (max-width: 480px){
     #SECTION_CARDS{
+        padding: 6rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 320px){
+    #SECTION_CARDS{
+        padding: 1rem;
         grid-template-columns: repeat(1, 1fr);
     }
 }

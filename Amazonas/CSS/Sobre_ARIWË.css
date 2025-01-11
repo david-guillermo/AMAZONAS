@@ -160,6 +160,7 @@ h1 span{
         height: 390px;
     }
     h1{
+        margin-left: 5.5rem;
         font-size: 3rem;
     }
 }
