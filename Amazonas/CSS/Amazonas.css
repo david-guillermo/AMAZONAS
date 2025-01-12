@@ -1,5 +1,6 @@
 body{
     background-color: #d8e4f7;
+    font-family: "Anton SC", sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -774,8 +775,24 @@ footer {
     color: #222cf4;
 }
 .FOOTER_SUBTITLE {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 5px;
-    color: rgb(29, 29, 29);
+    margin-bottom: 2px;
+    color: rgb(53, 53, 53);
+}
+.FOOTER_Link{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222cf4;
+    transition: 500ms;
+}
+.FOOTER_Link:hover{
+    font-size: .90rem;
+    color: #666cdf;
+}
+.FOOTER_Copyright{
+    font-size: .90rem;
+    font-weight: 600;
+    color: #000000;
+    transition: 500ms;
 }
