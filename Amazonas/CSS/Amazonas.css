@@ -552,13 +552,13 @@ a{
 }
 @media (max-width: 480px){
     #SECTION_CARDS{
-        padding: 6rem;
+        padding: 2rem;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (max-width: 320px){
     #SECTION_CARDS{
-        padding: 1rem;
+        padding: 2rem;
         grid-template-columns: repeat(1, 1fr);
     }
 }
