@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #d8e4f7;
+    font-family: "Anton SC", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#service_policy_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .All_content{
+        width: 600px;
+        height: 100%;
+        padding: 1.5rem;
+
+        .content_Box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            gap: .30rem;
+
+            .Introduction{
+                color: #000000;
+                font-size: 1.1rem;
+                font-weight: 600;
+                letter-spacing: .40px;
+                text-align: center;
+            }
+            .content_title{
+                color: black;
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+            .content_subtitle{
+                color: #3c22e5;
+                font-size: 1.3rem;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+            .content{
+                color: rgb(76, 76, 76);
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            h4{
+                font-weight: 700;
+                color: #000000;
+                text-align: center;
+            }
+            i{
+                margin-right: 10px ;
+                font-size: 1.1rem;
+                color: black;
+            }
+        }
+    }
+}
+.Title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Title_h1{
+    /* color: #00ff04; */
+    font-size: 2rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(8deg, rgb(202, 176, 255) 0%, rgb(50, 0, 230) 41%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.Title_h1::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 80%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.Title_h1 .animate_span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: anim 5s linear infinite;
+}
+@keyframes anim {
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 88%;
+    }
+}
