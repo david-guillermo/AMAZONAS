@@ -32,7 +32,7 @@ a{
             gap: .30rem;
 
             .Introduction{
-                color: #000000;
+                color: black;
                 font-size: 1.1rem;
                 font-weight: 600;
                 letter-spacing: .40px;
@@ -46,8 +46,8 @@ a{
                 letter-spacing: 1px;
             }
             .content_subtitle{
+                font-size: 1.2rem;
                 color: #3c22e5;
-                font-size: 1.3rem;
                 text-align: center;
                 letter-spacing: 1px;
             }
@@ -58,7 +58,7 @@ a{
             }
             h4{
                 font-weight: 700;
-                color: #000000;
+                color: #343434;
                 text-align: center;
             }
             i{
