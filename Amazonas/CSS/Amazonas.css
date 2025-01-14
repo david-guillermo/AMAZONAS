@@ -276,6 +276,13 @@ a{
     gap: 1.4rem;
     padding: 2rem;
 }
+@media (max-width: 480px){
+    .dropdown__content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 .dropdown__group{
     width: 150px;
     height: 190px;
@@ -286,7 +293,6 @@ a{
     flex-direction: column;
     border-radius: 8px;
     border: #ffffff77 1px solid;
-    /* row-gap: .51rem; */
     /* background-color: red; */
 }
 .dropdown__group:first-child{
