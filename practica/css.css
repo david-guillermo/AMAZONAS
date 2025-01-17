@@ -1,14 +1,73 @@
+body{
+    /* background-size: contain; */
+    /* object-fit: cover; */
+    /* background-image: url(../Amazonas/Imagenes/STONE-VENEZUELA.jpg); */
+    background-color: #c8c8c8;
+}
 *{
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: #d8e4f7;
+a{
+    text-decoration: none;
 }
 .IR_ARIWE{
     width: 100%;
     height: 70px;
-    background-color: rgba(0, 200, 255, 0.167);
+    background-color: rgba(255, 255, 255, 0.167);
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    .ARIWE{
+        width: 100px;
+        height: 50px;
+        color: #000;
+        border: #000 2px solid;
+        border-radius: 12px;
+        font-size: .90rem;
+        font-weight: 700;
+    }
+}
+/*============================================================================*/
+.BOX{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Button_open_close{
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        backdrop-filter: blur(4px);
+        transition: background-color 500ms ease;
+
+        #OPEN{
+            border: none;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: rgb(0, 255, 0);
+        }
+        #CLOSE{
+            border: none;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: rgb(255, 68, 68);
+        }
+    }
+}
+.Button_open_close.open {
+    background-color: rgba(35, 198, 35, 0.36);
+}
+.Button_open_close.closed {
+    background-color: rgba(157, 76, 76, 0.296);
+}
+.Container_icon .icon_open_close {
+    display: none;
+}
+.Container_icon .icon_open_close.show {
+    display: inline-block;
 }

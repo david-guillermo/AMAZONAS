@@ -598,14 +598,15 @@ a{
         .TITLE_Negocio{
             width: 100%;
             height: 40px;
-            font-size: 1.5em;
+            margin-top: 10px;
+            font-size: 1.2rem;
             color: #484ec6;
             font-family: "Anton SC", sans-serif;
             font-weight: 800;
-            letter-spacing: 1.5px;
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
             /* background-color: darkgreen; */
         }
         .DESCRIPTION_Negocio{
@@ -616,7 +617,9 @@ a{
             justify-content: center;
             text-align: center;
             color: #222229;
-            font-size: 0.90em;
+            letter-spacing: 1px;
+            font-size: .80rem;
+            font-weight: 600;
             font-family: "Anton SC", sans-serif;
             /* background-color: red; */
         }
