@@ -36,6 +36,80 @@ a{
         grid-area: item1;
         padding: 10px;
         /* background-color: #f8b60097; */
+
+        .Container_Open-Close{
+                width: 100%;
+                height: 150px;
+                gap: 1rem;
+                display: flex;
+                justify-content: center;
+
+                .Container_OPEN{
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .Box_icon_OPEN{
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: rgba(35, 198, 35, 0.36);
+
+                        .OPEN{
+                            color: rgb(38, 160, 38);
+                            font-size: 2.5rem;
+                        }
+                    }
+                    .Container_OPEN_text{
+                        width: 100%;
+
+                        .OPEN_text{
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            color: rgb(38, 160, 38);
+                    }
+                }
+                
+            }
+                .Container_CLOSE{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .Box_icon_CLOSE{
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: rgba(157, 76, 76, 0.296);
+
+                    .CLOSE{
+                        color: rgb(255, 68, 68);
+                        font-size: 2.5rem;
+                    }
+                }
+                .Container_CLOSE_text{
+                    width: 100%;
+
+                    .CLOSE_text{
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        color: rgb(255, 68, 68);
+                    }
+                }
+            }
+        }
     }
     .item2 {
         width: 100%;
