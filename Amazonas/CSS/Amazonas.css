@@ -13,6 +13,9 @@ ul{
 a{
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .grid-container {
     font-family: "Anton SC", sans-serif;
     height: 100%;
@@ -75,7 +78,6 @@ a{
                             color: rgb(38, 160, 38);
                     }
                 }
-                
             }
                 .Container_CLOSE{
                 width: 30%;
@@ -616,17 +618,25 @@ a{
 #SECTION_CARDS{
     width: 100%;
     height: 100%;
-    /* justify-content: center; */
+    display: grid;
     align-items: center;
     padding: 2rem;
     gap: 20px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, auto);
+    transition: all 0.4s;
     /* background-color: springgreen; */
+}
+@media (max-width: 900px){
+    #SECTION_CARDS{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media (max-width: 768px){
     #SECTION_CARDS{
+        display: grid;
+        justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -657,6 +667,7 @@ a{
     .Img_Box{
         width: 100%;
         height: 130px;
+        /* background-color: #222cf4; */
     
         .Img_Negocio{
             width: 100%;
@@ -880,4 +891,48 @@ footer {
     font-weight: 600;
     color: #000000;
     transition: 500ms;
+}
+.BOX{
+    width: 237px;
+    /* height: 300px; */
+    padding: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: #00000051; */
+
+    .Button_open_close{
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        backdrop-filter: blur(6px);
+        transition: background-color 500ms ease;
+
+        #OPEN{
+            border: none;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: rgb(0, 255, 0);
+        }
+        #CLOSE{
+            border: none;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: rgb(255, 68, 68);
+        }
+    }
+}
+.Button_open_close.open {
+    background-color: rgba(35, 198, 35, 0.316);
+}
+.Button_open_close.closed {
+    background-color: rgba(157, 76, 76, 0.396);
+}
+.Container_icon .icon_open_close {
+    display: none;
+}
+.Container_icon .icon_open_close.show {
+    display: inline-block;
 }
