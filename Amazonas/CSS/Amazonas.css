@@ -141,6 +141,7 @@ html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
         grid-area: item3;
         padding: 10px;
         /* background-color: #8bc34a7c; */
