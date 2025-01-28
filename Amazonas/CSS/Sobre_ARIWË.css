@@ -18,13 +18,20 @@ body{
 }
 .service-wrapper{
     padding: 5% 8%;
+    /* background-color: red; */
 }
 .service{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
+    /* background-color: aqua; */
 }
 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: #fff;
     font-size: 3rem;
     -webkit-text-stroke-width: 2px;
@@ -160,7 +167,7 @@ h1 span{
         height: 390px;
     }
     h1{
-        margin-left: 5.5rem;
+        /* margin-left: 5.5rem; */
         font-size: 3rem;
     }
 }

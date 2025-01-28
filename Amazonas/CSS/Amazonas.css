@@ -362,7 +362,7 @@ html{
 }
 .dropdown__group{
     width: 150px;
-    height: 190px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,6 +383,8 @@ html{
     color: var(--first-color);
 }
 .dropdown__title{
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
@@ -390,14 +392,23 @@ html{
 .dropdown__list{
     row-gap: .25rem;
 }
+.dropdown__social{
+    width: 100%;
+}
 .dropdown__link{
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     color: var(--text-color);
     transition: color .3s;
+    text-align: center;
 }
 .dropdown__link:hover{
     color: var(--title-color);
+}
+.icons-Afilialos{
+    margin-right: 2px;
+    font-size: .90rem;
+    color: white;
 }
 /* Rotate dropdown icon */
 .show-dropdown .dropdown__arrow{
