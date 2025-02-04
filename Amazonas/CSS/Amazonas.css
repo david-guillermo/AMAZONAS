@@ -607,6 +607,7 @@ html{
         align-items: center;
         text-align: center;
         flex-direction: column;
+        gap: .80rem;
         background-color: #1f2124;
 
         .TITLE_NEGOCIOS{
