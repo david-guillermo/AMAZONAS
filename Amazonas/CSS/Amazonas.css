@@ -676,6 +676,7 @@ html{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/*================================================*/
 /*========= CARD NEGOCIOS STYLES =========*/
 #Card{
     width: 280px;
@@ -803,6 +804,7 @@ html{
     height: 30%;
     /* background-color: #000000; */
 }
+/*================================================*/
 /*========= BOTON DE HOVER PARA CONOCER NEGOCIOS =========*/
 .Btn {
     display: flex;
@@ -874,6 +876,7 @@ html{
         /* background-color: cadetblue; */
     }
 }
+/*================================================*/
 /*========= Estilos para el footer =========*/
 footer {
     background-color: #d8e4f7;
