@@ -640,40 +640,67 @@ html{
     transition: all 0.4s;
     /* background-color: springgreen; */
 }
-@media (max-width: 960px){
+@media (max-width: 2560px){
     #SECTION_CARDS{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(auto, auto);
+    }
+}
+@media (max-width: 1920px){
+    #SECTION_CARDS{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(auto, auto);
+    }
+}
+@media (max-width: 1440px){
+    #SECTION_CARDS{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto, auto);
+    }
+}
+@media (max-width: 1280px){
+    #SECTION_CARDS{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 0.30fr);
+        grid-template-rows: repeat(auto, auto);
+    }
+}
+@media (max-width: 1024px){
+    #SECTION_CARDS{
+        display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, auto);
     }
 }
 @media (max-width: 768px){
     #SECTION_CARDS{
         display: grid;
+        align-items: center;
         justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 560px){
-    #SECTION_CARDS{
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 0.30fr);
+        grid-template-rows: repeat(auto, auto);
     }
 }
 @media (max-width: 480px){
     #SECTION_CARDS{
-        display: flex;
+        display: grid;
         align-items: center;
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media (max-width: 320px){
-    #SECTION_CARDS{
-        margin-left: 0px;
-        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-template-columns: repeat(1, 0fr);
+        grid-template-rows: repeat(auto, auto);
     }
 }
 /*================================================*/
